@@ -397,20 +397,7 @@ code span.ot { color: #007020; }
 <pre><code>##  [1] B A B A A E D B A A B C B A E E A B B B
 ## Levels: A B C D E</code></pre>
 <hr />
-<div id="function-to-generate-files-with-predictions-to-submit-for-assignment" class="section level3">
-<h3>Function to generate files with predictions to submit for assignment</h3>
-<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb25-1" title="1">pml_write_files =<span class="st"> </span><span class="cf">function</span>(x){</a>
-<a class="sourceLine" id="cb25-2" title="2">      n =<span class="st"> </span><span class="kw">length</span>(x)</a>
-<a class="sourceLine" id="cb25-3" title="3">      <span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span>n){</a>
-<a class="sourceLine" id="cb25-4" title="4">            filename =<span class="st"> </span><span class="kw">paste0</span>(<span class="st">&quot;problem_id_&quot;</span>,i,<span class="st">&quot;.txt&quot;</span>)</a>
-<a class="sourceLine" id="cb25-5" title="5">            <span class="kw">write.table</span>(x[i],<span class="dt">file=</span>filename,<span class="dt">quote=</span><span class="ot">FALSE</span>,<span class="dt">row.names=</span><span class="ot">FALSE</span>,<span class="dt">col.names=</span><span class="ot">FALSE</span>)</a>
-<a class="sourceLine" id="cb25-6" title="6">      }</a>
-<a class="sourceLine" id="cb25-7" title="7">}</a>
-<a class="sourceLine" id="cb25-8" title="8"></a>
-<a class="sourceLine" id="cb25-9" title="9"><span class="kw">pml_write_files</span>(predictions_test_data)</a></code></pre></div>
-<hr />
-</div>
-</div>
+
 </section>
 
 
